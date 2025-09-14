@@ -1,0 +1,105 @@
+:root {
+    --body: #323232;
+    --text: #ffffff;
+    --accent-teal: #7db6b1;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #323232;
+        --body: #ffffff;
+    }
+}
+
+* {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body);
+    color: var(--text);
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 1em 4rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+/* hamburger menu would've been impossible without 
+ * https://stackoverflow.com/a/70371685 */
+.navigation-links {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+    flex-direction: row;
+    /* margin: 1rem; */
+    top: 0;
+}
+
+.navigation-links * {
+    text-decoration: none;
+    flex: 1 1 0;
+}
+
+.navigation-links .pages {
+    width: min-content;
+    white-space: nowrap;
+}
+
+.page-selected {
+    weight: bold;
+    color: var(--accent-teal);
+}
+
+.mobile-header {
+    display: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.headshot figure {
+    width: 40%;
+}
+
+a {
+    color: var(--text);
+}
+
+address {
+    font-style: normal;
+}
+
+.columns {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+
+.columns section {
+    flex: 1 1 0;
+}
+
+@media only screen and (max-width:765px) {
+    .hamburger {
+        display: block;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+}
