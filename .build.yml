@@ -20,4 +20,4 @@ tasks:
       cd ajab
       tar -C public -cvz . > ../site.tar.gz
   - upload: |
-      hut pages publish -d $domain site.tar.gz
+      hut pages publish -d $domain --site-config ajab/siteconfig.json site.tar.gz

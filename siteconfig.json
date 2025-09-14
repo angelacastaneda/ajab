@@ -1,0 +1,8 @@
+{
+    "notFound": "404.html",
+	"fileConfigs": [
+        { "glob": "*.png", "options": { "cacheControl": "max-age=15552000" } },
+        { "glob": "*.jpg", "options": { "cacheControl": "max-age=15552000" } },
+        { "glob": "*.css", "options": { "cacheControl": "max-age=7200" } }
+    ]
+}
