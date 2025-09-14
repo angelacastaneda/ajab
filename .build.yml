@@ -2,12 +2,17 @@ image: alpine/edge
 packages:
   - hut
   - zola
+  - npm
 oauth: pages.sr.ht/PAGES:RW
 environment:
   domain: ajab.umn.page
 sources:
   - https://git.sr.ht/~ac2/ajab
 tasks:
+  - bootstrap: |
+      cd ajab
+      npm i
+      mv node_modules static
   - build: |
       cd ajab
       zola build
