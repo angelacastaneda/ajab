@@ -33,7 +33,7 @@ title = "About"
                     California, Irvine (2017), where I also received my MA (2012), and
                     completed a BA with Honors in Community Studies at the University of
                     California, Santa Cruz (2008).</p>
-                <p>My research stems from my lifelong obsession with language. I am
+                <p>My research stems from my life-long obsession with language. I am
                     especially interested in the question of language in the Persianate
                     world, the region spanning much of Eurasia where Persian was once a
                     lingua franca. My first book on this topic, <a
