@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://ajab.umn.page/sitemap.xml
